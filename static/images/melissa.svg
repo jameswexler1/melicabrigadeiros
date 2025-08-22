@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360">
+  <rect width="640" height="360" fill="#ffe9e3"/>
+  <circle cx="320" cy="150" r="70" fill="#f7caca"/>
+  <rect x="240" y="220" width="160" height="90" rx="18" fill="#eab3b3"/>
+  <text x="320" y="335" font-size="22" text-anchor="middle" fill="#6b3a2f" font-family="Arial">Foto da Melissa (placeholder)</text>
+</svg>

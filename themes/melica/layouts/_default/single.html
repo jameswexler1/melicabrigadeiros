@@ -1,0 +1,10 @@
+{{ define "main" }}
+<article class="content">
+  <img class="cover" src="{{ .Params.image }}" alt="{{ .Title }}">
+  <h1>{{ .Title }}</h1>
+  {{ with .Params.description }}<p class="muted">{{ . }}</p>{{ end }}
+  <p class="price">{{ .Params.price }}</p>
+  {{ .Content }}
+  <p><a class="btn" href="https://wa.me/5511999999999?text=Quero+encomendar:+{{ .Title | urlize }}">📱 Pedir no WhatsApp</a></p>
+</article>
+{{ end }}

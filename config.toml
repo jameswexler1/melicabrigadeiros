@@ -1,0 +1,31 @@
+baseURL = "/"
+languageCode = "pt-br"
+title = "Meliça Brigadeiros"
+theme = "melica"
+defaultContentLanguage = "pt"
+enableRobotsTXT = true
+
+[params]
+  logo = "/images/logo.svg"
+  tagline = "Os melhores brigadeiros artesanais com muito amor"
+  whatsapp = "+55 11 99999-9999"
+  instagram = "https://instagram.com/melicabrigadeiros"
+  email = "contato@melicabrigadeiros.com"
+
+[menu]
+  [[menu.main]]
+    name = "Início"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "Sobre"
+    url = "/sobre/"
+    weight = 2
+  [[menu.main]]
+    name = "Catálogo"
+    url = "/produtos/"
+    weight = 3
+  [[menu.main]]
+    name = "Contato"
+    url = "/contato/"
+    weight = 4

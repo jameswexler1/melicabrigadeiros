@@ -1,0 +1,32 @@
+:root{
+  --bg:#fffaf8;
+  --text:#3b2a28;
+  --primary:#6b3a2f;
+  --accent:#e36d6d;
+  --card:#ffffff;
+  --border:#efd9d4;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui, Arial}
+a{color:var(--accent);text-decoration:none}
+.container{max-width:1100px;margin:0 auto;padding:2rem}
+.site-header{background:var(--primary);color:#fff}
+.site-header .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem;max-width:1100px;margin:0 auto;padding:1rem 2rem}
+.brand{display:flex;align-items:center;gap:.6rem;color:#fff}
+.brand span{font-weight:700}
+.nav ul{list-style:none;display:flex;gap:1rem;margin:0;padding:0}
+.nav a{color:#fff}
+.hero{text-align:center;padding:3rem 1rem;background:#ffe9e3;border-radius:16px}
+.lead{opacity:.85}
+.grid{list-style:none;padding:0;margin:1.5rem 0;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1rem}
+.card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:1rem;text-align:center;box-shadow:0 2px 6px rgba(0,0,0,.06)}
+.card img{max-width:100%;border-radius:12px}
+.price{font-weight:700}
+.btn{background:var(--accent);color:#fff;padding:.6rem 1rem;border-radius:999px;display:inline-block}
+.btn:hover{opacity:.9}
+.center{text-align:center}
+.content{max-width:740px;margin:1rem auto}
+.site-footer{background:#f2dfda;padding:2rem 0}
+.site-footer .wrap{max-width:1100px;margin:0 auto;text-align:center;color:#5a4541}
+.muted{opacity:.8}
+.cover{max-width:420px;border-radius:12px;display:block;margin:0 auto 1rem}

@@ -1,0 +1,14 @@
+{{ define "main" }}
+<h1>{{ .Title }}</h1>
+<ul class="grid">
+  {{ range .Pages }}
+    <li class="card">
+      <img src="{{ .Params.image }}" alt="{{ .Title }}">
+      <h3>{{ .Title }}</h3>
+      <p>{{ .Params.description }}</p>
+      <p class="price">{{ .Params.price }}</p>
+      <p><a class="btn" href="https://wa.me/5511999999999?text=Quero+encomendar:+{{ .Title | urlize }}">📱 Pedir no WhatsApp</a></p>
+    </li>
+  {{ end }}
+</ul>
+{{ end }}

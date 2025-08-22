@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  {{ partial "head.html" . }}
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a href="/" class="brand"><img src="{{ site.Params.logo }}" alt="Logo" height="44"><span>{{ site.Title }}</span></a>
+      <nav class="nav">
+        <ul>
+          {{ range site.Menus.main }}
+            <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+          {{ end }}
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="container">
+    {{ block "main" . }}{{ end }}
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>{{ site.Params.tagline }}</p>
+      <p>📱 {{ site.Params.whatsapp }} · 📷 <a href="{{ site.Params.instagram }}">Instagram</a> · ✉️ {{ site.Params.email }}</p>
+      <p class="tiny">© {{ now.Year }} {{ site.Title }}</p>
+    </div>
+  </footer>
+</body>
+</html>

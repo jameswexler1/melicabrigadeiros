@@ -1,0 +1,25 @@
+{{ define "main" }}
+<section class="hero">
+  <h1>{{ .Title }}</h1>
+  <p class="lead">{{ .Params.description }}</p>
+  <div class="content">{{ .Content }}</div>
+</section>
+
+<section>
+  <h2>Mais Pedidos</h2>
+  <ul class="grid">
+    {{ range first 4 (where site.RegularPages "Section" "produtos") }}
+      <li class="card">
+        <img src="{{ .Params.image }}" alt="{{ .Title }}">
+        <h3>{{ .Title }}</h3>
+        <p>{{ .Params.description }}</p>
+        <p class="price">{{ .Params.price }}</p>
+        <p><a class="btn" href="https://wa.me/5511999999999?text=Quero+encomendar:+{{ .Title | urlize }}">📱 Pedir no WhatsApp</a></p>
+      </li>
+    {{ end }}
+  </ul>
+  <p class="center">
+    <a class="btn" href="/produtos/">Ver Catálogo Completo</a>
+  </p>
+</section>
+{{ end }}
